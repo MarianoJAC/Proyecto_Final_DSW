@@ -1,0 +1,8 @@
+Integrantes:
+- Mariano Cirillo
+- Diego Pozo
+- Teresa Aguayo
+
+Repositorio de GitHub: https://github.com/MarianoJAC/Proyecto_Final_DSW.git
+Front-End desplegado: https://proyectofinaldsw.vercel.app/
+Back-End: Firebase Firestore (proyecto-final-dsw)
