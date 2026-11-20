@@ -1,0 +1,71 @@
+// Datos de ejemplo. Se usan cuando Firebase todavía no está configurado
+// y sirven como semilla para cargar la colección "products" en Firestore.
+export const productosSemilla = [
+  {
+    id: 'p1',
+    nombre: 'Auriculares inalámbricos',
+    descripcion:
+      'Sonido envolvente, cancelación de ruido y hasta 30 horas de batería. Incluyen estuche de carga.',
+    precio: 24990,
+    categoria: 'Tecnología',
+    icono: '🎧',
+    stock: 12,
+  },
+  {
+    id: 'p2',
+    nombre: 'Taza de cerámica',
+    descripcion:
+      'Taza artesanal de 350 ml con acabado mate. Ideal para el café de todos los días.',
+    precio: 8500,
+    categoria: 'Hogar',
+    icono: '☕',
+    stock: 25,
+  },
+  {
+    id: 'p3',
+    nombre: 'Mochila urbana',
+    descripcion:
+      'Compartimento acolchado para notebook de 15", bolsillo antifurto y material resistente al agua.',
+    precio: 32000,
+    categoria: 'Accesorios',
+    icono: '🎒',
+    stock: 8,
+  },
+  {
+    id: 'p4',
+    nombre: 'Lámpara de escritorio',
+    descripcion:
+      'Luz LED regulable con tres temperaturas de color y brazo articulado. Perfecta para estudiar.',
+    precio: 18900,
+    categoria: 'Hogar',
+    icono: '💡',
+    stock: 15,
+  },
+  {
+    id: 'p5',
+    nombre: 'Mouse ergonómico',
+    descripcion:
+      'Diseño vertical que reduce la fatiga, conexión inalámbrica y sensor de alta precisión.',
+    precio: 14500,
+    categoria: 'Tecnología',
+    icono: '🖱️',
+    stock: 20,
+  },
+  {
+    id: 'p6',
+    nombre: 'Cuaderno A5',
+    descripcion:
+      'Cuaderno de tapas duras con 120 hojas de papel de 100 g. Se abre completamente plano.',
+    precio: 4500,
+    categoria: 'Papelería',
+    icono: '📓',
+    stock: 40,
+  },
+]
+
+export const formatearPrecio = (valor) =>
+  new Intl.NumberFormat('es-AR', {
+    style: 'currency',
+    currency: 'ARS',
+    maximumFractionDigits: 0,
+  }).format(valor)

@@ -1,0 +1,18 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Catálogo: cualquiera puede leerlo, nadie lo modifica desde el front.
+    match /products/{productId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // Pedidos: se pueden crear y leer para la demo.
+    // Para un proyecto real, proteger la lectura con autenticación.
+    match /orders/{orderId} {
+      allow read, create: if true;
+      allow update, delete: if false;
+    }
+  }
+}
