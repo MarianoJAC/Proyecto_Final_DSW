@@ -7,14 +7,14 @@
   },
   {
     "id": 2,
-    "nombre": "Integrante 2",
+    "nombre": "Diego Pozo",
     "puesto": "Desarrollo Back-End",
-    "email": "integrante2@tiendadeclase.com"
+    "email": "diegodpozo@tiendaclase.com"
   },
   {
     "id": 3,
-    "nombre": "Integrante 3",
+    "nombre": "Teresa Aguayo",
     "puesto": "Diseño y documentación",
-    "email": "integrante3@tiendadeclase.com"
+    "email": "teresa@tiendadeclase.com"
   }
 ]
