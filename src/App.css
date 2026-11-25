@@ -250,6 +250,7 @@ textarea:focus-visible {
 
 .filtros {
   display: flex;
+  justify-content: center;
   gap: 8px;
   margin-bottom: 28px;
   flex-wrap: wrap;
