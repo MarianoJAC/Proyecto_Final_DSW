@@ -3,7 +3,7 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
-import Cart from './components/Cart/Cart'
+import CartView from './components/Cart/CartView'
 import FormContainer from './components/Form/FormContainer'
 import './App.css'
 
@@ -31,7 +31,7 @@ function App() {
           <Route path="/" element={<ItemListContainer />} />
           <Route path="/productos" element={<ItemListContainer />} />
           <Route path="/productos/:id" element={<ItemDetailContainer />} />
-          <Route path="/carrito" element={<Cart />} />
+          <Route path="/carrito" element={<CartView />} />
           <Route path="/pedido" element={<FormContainer />} />
           <Route path="*" element={<PaginaNoEncontrada />} />
         </Routes>
