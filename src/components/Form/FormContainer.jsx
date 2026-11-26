@@ -63,8 +63,6 @@ function FormContainer() {
       <FormUI
         formData={formData}
         errors={errors}
-        items={items}
-        total={total}
         enviando={enviando}
         confirmacion={confirmacion}
         onChange={handleChange}

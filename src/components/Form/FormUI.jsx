@@ -1,16 +1,17 @@
 import { Link } from 'react-router-dom'
+import { useCart } from '../../context/useCart'
 import { formatearPrecio } from '../../data/products'
 
 function FormUI({
   formData,
   errors,
-  items,
-  total,
   enviando,
   confirmacion,
   onChange,
   onSubmit,
 }) {
+  const { items, total } = useCart()
+
   if (confirmacion) {
     return (
       <div className="confirmacion" role="status">
